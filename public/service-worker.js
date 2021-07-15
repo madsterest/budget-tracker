@@ -32,6 +32,8 @@ self.addEventListener("activate", function (event) {
       );
     })
   );
+
+  self.clients.claim();
 });
 
 self.addEventListener("fetch", function (event) {
